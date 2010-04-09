@@ -1,0 +1,47 @@
+Usage: check_ajp -u <service_url> -t <time_out> -r <request_file>
+    [-H <headers>] [-V <http_version>] [-b <post_body_file>]
+    [-q <query_params>] [-u <user_agent>] [-m <method>]
+    [-w <warning_threshold>] [-c <critical_threshold>]
+    [-v] [-h]
+
+Options are:
+
+-h/--help
+    Help page, this page.
+	
+-u/--url
+    AJP URL; for example: "http://<host>:<port>/<contextroot>"
+	
+-t/--timeout
+    Connection timeout in seconds. Defaults to 30 seconds.
+    
+-r/--request-file
+    An XML file containing all configuration values.
+	
+-H/--headers 
+    Header values such as "header_1:value|....|header_2:value"
+	
+-V/--http-version
+    HTTP version. Defaults to 1.1
+
+-b/--body-file
+    File to send in the HTTP body of POST requests.
+
+-q/--query-params
+    Query string parameters such as "param_1:paramValue|...|param_n:paramValue".
+
+-v/--verbose
+    Verbose output.
+
+-U/--user-agent
+    User agent header value. Defaults to "AJPClient/1.0"
+	
+-m/--method
+    Request method. Defaults to "GET".
+
+-w/--warning
+	Request response warning threshold in milliseconds.
+	
+-c/--critical
+	Request response critical threshold in milliseconds.
+
